@@ -1,0 +1,107 @@
+<!--
+ * @summary create form for option 1 and gather user data
+ * @author Travis Patriarca <trav.patriarca@gmail.com>
+ *
+ * Created at     : 01-04-2021 
+ * Last modified  : 06-04-2021
+ -->
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        <link rel='stylesheet' type='text/css' href='../css/index.css'>
+        <script src="../js/web.js"></script>
+        <title>Option 1</title>
+    </head>
+    <body>
+        <main>
+            <div class='form-large'>
+                <div id='submit-status'></div>
+                <form id='form-filter' class='form-style'>
+                    <h3>Filter</h3>
+                    <div class='filter-div'>
+                        <h4 class='filter-label'>Year</h4>
+                        <select name='year' id='year'>
+                            <option value='2007'>2007</option>
+                            <option value='2008'>2008</option>
+                            <option value='2009'>2009</option>
+                            <option value='2010'>2010</option>
+                            <option value='2011'>2011</option>
+                            <option value='2012'>2012</option>
+                            <option value='2013'>2013</option>
+                            <option value='2014'>2014</option>
+                            <option value='2015'>2015</option>
+                            <option value='2016'>2016</option>
+                        </select>
+                    </div>
+                    <div class='filter-div' id='month-selection'>
+                        <h4 class='filter-label'>Range</h4>
+                        <select name='start-month' id='start-month'>
+                            <option value='01' selected='selected'>January</option>
+                            <option value='02'>February</option>
+                            <option value='03'>March</option>
+                            <option value='04'>April</option>
+                            <option value='05'>May</option>
+                            <option value='06'>June</option>
+                            <option value='07'>July</option>
+                            <option value='08'>August</option>
+                            <option value='09'>September</option>
+                            <option value='10'>October</option>
+                            <option value='11'>November</option>
+                            <option value='12'>December</option>
+                        </select>
+                    
+                        <select name='end-month' id='end-month'>
+                            <option value='01'>January</option>
+                            <option value='02'>February</option>
+                            <option value='03'>March</option>
+                            <option value='04'>April</option>
+                            <option value='05'>May</option>
+                            <option value='06'>June</option>
+                            <option value='07'>July</option>
+                            <option value='08'>August</option>
+                            <option value='09'>September</option>
+                            <option value='10'>October</option>
+                            <option value='11'>November</option>
+                            <option value='12' selected='selected'>December</option>
+                        </select>
+                    </div>
+                    <div class='filter-div' id='measurements'>
+                        <h4 class='filter-label'>Measurements</h4>
+                        <label for='wind-speed-check'>wind speed</label>
+                        <input type='checkbox' id='wind-speed-check' name='wind-speed-check'>
+                        <label for='solar-radiation-check'>solar radiation</label>
+                        <input type='checkbox' id='solar-radiation-check' name='solar-radiation-check'>
+                    </div>
+                    <div class='filter-div' id='output'>
+                        <h4 class='filter-label'>Output</h4>
+                        <label for='table-check'>table</label>
+                        <input type='checkbox' id='table-check' name='table-check'>
+                        <label for='graph-check'>graph</label>
+                        <input type='checkbox' id='graph-check' name='graph-check'>
+                    </div>
+
+                    <input type='submit' value='Submit'  id='submitForm' class='form-button'>
+                    <input type='reset' value='Reset' class='form-button'>
+                </form>
+            </div>
+            <div class='form-large div-table'>
+                <div id='submit-status'></div>
+                <form id='form-table' class='form-style'>
+                    <h3>Table</h3>
+                    <div id='table'></div>
+                </form>
+            </div>
+            <div class='form-large div-graph'>
+                <div id='submit-status'></div>
+                <form id='form-graph' class='form-style'>
+                    <h3>Graph</h3>
+                    <div id="graph" style="height: 370px; width: 100%;"></div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

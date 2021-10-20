@@ -1,0 +1,217 @@
+/* --------------------------------------------------------
+Style Sheet for Assignment 1 website
+
+version: 1.0
+last modified: 06.04.2021 by Travis Patriarca
+author: Travis Patriarca
+email: trav.patriarca@gmail.com
+website: http://ceto.murdoch.edu.au:40641/
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /*import font Open Sans*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #161616;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    text-align: center; 
+}
+
+/*-=-=-=-=-=-= START OF FORMS =-=-=-=-=-=-*/
+.form-small {
+    display: inline-block;
+    width: 300px;
+    margin-top: 10vh;
+}
+
+.form-large {
+    display: inline-block;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.form-large:first-of-type {
+    margin-top: 5vh;
+}
+
+.form-fit {
+    display: inline-block;
+    margin-top: 5vh;
+    min-width: 400px;
+}
+
+
+.status-fail {
+    color: rgb(199, 186, 186);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background-color: rgba(255, 0, 0, 0.124);
+    border: 2px solid rgba(255, 0, 0, 0.159);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 3px 0px;
+}
+
+.status-success {
+    color: rgb(199, 186, 186);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 255, 42, 0.124);
+    border: 2px solid rgba(43, 255, 0, 0.159);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 3px 0px;
+    width: 100%;
+}
+
+.form-style {
+    box-sizing: border-box;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 15px 15px 10px 15px;
+}
+
+.form-style h3 {
+    color: rgb(29, 29, 29);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 0px 0px 5px 1px;
+}
+
+#inputs {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search {
+    box-sizing: border-box;
+    background-color: #aaaaaa;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: rgb(44, 44, 44);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    margin: 5px auto;
+    padding: 5px 0px 5px 10px;
+}
+
+.search::placeholder {
+    color: rgb(75, 75, 75);
+}
+
+
+.search:focus {
+    border: 1px solid #272727;
+    padding: 4px 0px 4px 9px;
+}
+
+.input-error {
+    border-bottom: 2px solid #da6262;
+    padding: 5px 0px 3px 10px;
+}
+
+.form-button {
+    background-color: #2b2b2b;
+    color: rgb(223, 223, 223);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    width: 30%;
+    margin-bottom: 3px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
+/*-=-=-=-=-=-= END OF FORMS =-=-=-=-=-=-*/
+.filter-div {
+    display: flex;
+    margin: 0px 0px 15px 5px;
+    align-items: center;
+}
+
+.filter-div:first-of-type {
+    margin-top: 15px;
+}
+
+.filter-div label {
+    margin-right:5px;
+}
+
+.filter-div input {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+select {
+    margin-right: 5px;
+}
+
+select, label {
+    font-size: 17px;
+}
+
+.filter-label {
+    border-radius: 4px;
+    padding: 5px 5px;
+    background-color: #2b2b2b;
+    font-size: 15px;
+    color: rgb(223, 223, 223);
+    font-weight: 500;
+    margin-right: 10px
+}
+
+input[type=checkbox] {
+    width: 17px; /*Desired width*/
+    height: 17px; /*Desired height*/
+    cursor: pointer;
+}
+
+#table {
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px 3px;
+    margin: 0px;
+    min-width: 45px;
+}
+
+tr:nth-child(even) {
+    background-color: #00000015;
+}
+
+.th-row {
+    text-align: left;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.th-col {
+    padding-bottom: 5px;
+}
+
+#graph {
+    margin-top: 5px;
+}
